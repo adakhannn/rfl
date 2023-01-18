@@ -43,7 +43,7 @@
     display: none;
   }
   
-  .logo__img {
+  .header .logo__img {
     width: 170px;
   }
   
@@ -141,6 +141,7 @@
   .header__online {
     justify-content: center;
     background-color: var(--blue);
+    gap: 10px;
   }
   
   .header__request {

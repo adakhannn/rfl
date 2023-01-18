@@ -8,7 +8,7 @@
     line-height: 18px;
   }
   
-  .logo__img {
+  .header .logo__img {
     width: 110px;
   }
   
@@ -25,5 +25,20 @@
   .header__link {
     font-size: 18px;
     line-height: 22px;
+  }
+  
+  .footer__navs {
+    grid-template-columns: repeat(1,1fr);
+    gap: 10px;
+  }
+  
+  .footer__row {
+    flex-direction: column;
+  }
+  
+  .header__text {
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
   }
 }

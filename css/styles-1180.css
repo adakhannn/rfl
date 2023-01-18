@@ -37,7 +37,7 @@
     padding: 0 25px;
   }
   
-  .logo__img {
+  .header .logo__img {
     width: 200px;
     height: auto;
   }
@@ -58,5 +58,9 @@
   .menu__text {
     font-size: 16px;
     line-height: 20px;
+  }
+  
+  .footer__navs {
+    gap: 30px;
   }
 }

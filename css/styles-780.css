@@ -8,12 +8,33 @@
     line-height: 20px;
   }
   
-  .logo__img {
+  .header .logo__img {
     width: 140px;
   }
   
   .header__wrapper {
     top: 96px;
     max-height: calc(100vh - 97px);
+  }
+  
+  .footer__row {
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+  
+  .payments {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .footer__navs {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 680px) {
+  .footer__navs {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
   }
 }
