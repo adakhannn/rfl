@@ -1,0 +1,19 @@
+@media (max-width: 780px) {
+  .container {
+    padding: 0 20px;
+  }
+  
+  .dropdown__title .dropdown__link {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  
+  .logo__img {
+    width: 140px;
+  }
+  
+  .header__wrapper {
+    top: 96px;
+    max-height: calc(100vh - 97px);
+  }
+}
