@@ -3,10 +3,6 @@
     padding: 0 10px;
   }
   
-  .slider--main {
-    margin: 0 -10px;
-  }
-  
   .dropdown__title .dropdown__link {
     font-size: 14px;
     line-height: 18px;
@@ -47,7 +43,7 @@
   }
   
   .all {
-    padding: 10px;
+    padding: 5px 10px;
   }
   
   .all__text {
@@ -63,6 +59,7 @@
   .new__content {
     gap: 10px;
     padding: 10px;
+    height: 116px;
   }
   
   .new__title {
@@ -70,8 +67,8 @@
     line-height: 20px;
   }
   
-  .new__content {
-    height: 116px;
+  .points {
+    left: 10px;
   }
   
   .button__text {
@@ -79,9 +76,26 @@
     line-height: 18px;
   }
   
-  .slider__arrows {
-    gap: 10px;
-    bottom: 125px;
-    right: 10px;
+  .dropdown--dark {
+    margin: 0 0 0 -10px;
+  }
+  
+  .dropdown__title {
+    padding: 0 10px;
+  }
+  
+  .dropdown__option .dropdown__link {
+    padding: 10px;
+  }
+  
+  .points {
+    top: calc(50% - 58px);
+    gap: 5px;
+    margin: -15px 0 0;
+  }
+  
+  .points__item {
+    width: 7px;
+    height: 7px;
   }
 }

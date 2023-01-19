@@ -3,10 +3,6 @@
     padding: 0 20px;
   }
   
-  .slider--main {
-    margin: 0 -20px;
-  }
-  
   .dropdown__title .dropdown__link {
     font-size: 16px;
     line-height: 20px;
@@ -94,27 +90,8 @@
     line-height: 20px;
   }
   
-  .slider__arrows {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    position: absolute;
-    bottom: 190px;
-    right: 20px;
-  }
-  
-  .slider__arrow {
-    border: 1px solid var(--white);
-    display: flex;
-    padding: 10px;
-  }
-  
-  .slider__icon {
-    stroke: var(--white);
-  }
-  
-  .slider__arrow--left .slider__icon {
-    transform: rotate(180deg);
+  .points {
+    top: calc(50% - 85px);
   }
 }
 

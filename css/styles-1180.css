@@ -7,16 +7,8 @@
     padding: 0 10px;
   }
   
-  .slider--main {
-    margin: 0 -30px;
-  }
-  
   .info__title {
     -webkit-line-clamp: 2;
-  }
-  
-  .header__bottom .container {
-    padding: 0;
   }
 }
 
@@ -47,10 +39,6 @@
 @media (max-width: 1180px) {
   .container {
     padding: 0 25px;
-  }
-  
-  .slider--main {
-    margin: 0 -25px;
   }
   
   .header .logo__img {
@@ -105,5 +93,6 @@
   .new__title {
     font-size: 28px;
     line-height: 32px;
+    -webkit-line-clamp: 2;
   }
 }
