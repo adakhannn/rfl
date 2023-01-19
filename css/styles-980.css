@@ -1,3 +1,11 @@
+@media (min-width: 980px) {
+  .slider__nav.tns-nav-active {
+    width: calc(100% + 15px);
+    position: relative;
+    right: 15px;
+  }
+}
+
 @media (max-width: 980px) {
   .socials--desktop {
     display: none;
@@ -159,7 +167,6 @@
   .menu__list {
     flex-direction: column;
     width: 100%;
-    margin: 0;
     background-color: var(--blue);
     padding: 5px 0;
   }
@@ -168,11 +175,24 @@
     width: 100%;
   }
   
-  .header__bottom .container {
-    padding: 0;
-  }
-  
   .menu__link {
     padding: 10px 0;
+  }
+  
+  .slider__row {
+    flex-direction: column;
+  }
+  
+  .slider__wrapper {
+    width: 100%;
+  }
+  
+  .slider__column {
+    width: 100%;
+  }
+  
+  .slider__navs {
+    grid-template-rows: initial;
+    grid-template-columns: repeat(3,1fr);
   }
 }

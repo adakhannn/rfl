@@ -6,6 +6,18 @@
   .header__request {
     padding: 0 10px;
   }
+  
+  .slider--main {
+    margin: 0 -30px;
+  }
+  
+  .info__title {
+    -webkit-line-clamp: 2;
+  }
+  
+  .header__bottom .container {
+    padding: 0;
+  }
 }
 
 @media (min-width: 1180px) {
@@ -37,6 +49,10 @@
     padding: 0 25px;
   }
   
+  .slider--main {
+    margin: 0 -25px;
+  }
+  
   .header .logo__img {
     width: 200px;
     height: auto;
@@ -62,5 +78,32 @@
   
   .footer__navs {
     gap: 30px;
+  }
+  
+  .all {
+    padding: 15px 20px;
+  }
+  
+  .all__text {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  
+  .info {
+    padding: 10px 20px;
+  }
+  
+  .info__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  
+  .new__content {
+    gap: 30px;
+  }
+  
+  .new__title {
+    font-size: 28px;
+    line-height: 32px;
   }
 }

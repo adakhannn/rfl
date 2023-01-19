@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>РФЛ</title>
     <link href="css/normalize.css" rel="stylesheet">
+    <link href="plugins/tiny-slider/tiny-slider.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/styles-1180.css" rel="stylesheet">
     <link href="css/styles-980.css" rel="stylesheet">
@@ -274,7 +275,127 @@
         </div>
     </header>
     <main class="main">
-
+        <div class="container">
+            <div class="slider slider--main">
+                <div class="slider__row">
+                    <div class="slider__wrapper">
+                        <ul class="slider__list js-tiny-slider"
+                            data-controls-container=".js-slider-controls"
+                            data-controls="true"
+                            data-nav="true"
+                            data-nav-container=".js-slider-nav"
+                            data-items="1"
+                            data-loop="true"
+                            data-autoplay="true"
+                            data-autoplay-timeout="10000"
+                            data-autoplay-over-pause="true"
+                            data-speed="1000"
+                            data-mouse-drag="true"
+                            data-mode="gallery"
+                            data-touch="true"
+                        >
+                            <li class="slider__item">
+                                <a class="new" href="#">
+                                    <div class="new__wrap">
+                                        <img class="new__img" src="/img/dev/dev-rectangle-980x600.png" width="830" height="470" alt="Новость 1">
+                                    </div>
+                                    <div class="new__content">
+                                        <div class="new__texts">
+                                            <p class="new__date">09 января</p>
+                                            <p class="new__title">Обзор "Перед туром" от Петра Коптева</p>
+                                        </div>
+                                        <div class="button">
+                                            <p class="button__text">Подробнее</p>
+                                            <svg class="button__icon button__icon--mobile" width="20" height="20">
+                                                <use xlink:href="/img/sprite.svg#arrow-right"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="slider__item">
+                                <a class="new" href="#">
+                                    <div class="new__wrap">
+                                        <img class="new__img" src="/img/dev/dev-rectangle-980x600.png" width="830" height="470" alt="Новость 1">
+                                    </div>
+                                    <div class="new__content">
+                                        <div class="new__texts">
+                                            <p class="new__date">09 января</p>
+                                            <p class="new__title">Обзор "Перед туром" от Петра Коптева Обзор "Перед туром" от Петра Коптева Обзор "Перед туром" от Петра Коптева Обзор "Перед туром" от Петра Коптева Обзор "Перед туром" от Петра Коптева</p>
+                                        </div>
+                                        <div class="button">
+                                            <p class="button__text">Подробнее</p>
+                                            <svg class="button__icon button__icon--mobile" width="20" height="20">
+                                                <use xlink:href="/img/sprite.svg#arrow-right"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="slider__item">
+                                <a class="new" href="#">
+                                    <div class="new__wrap">
+                                        <img class="new__img" src="/img/dev/dev-rectangle-980x600.png" width="830" height="470" alt="Новость 1">
+                                    </div>
+                                    <div class="new__content">
+                                        <div class="new__texts">
+                                            <p class="new__date">09 января</p>
+                                            <p class="new__title">Обзор Петра Коптева</p>
+                                        </div>
+                                        <div class="button">
+                                            <p class="button__text">Подробнее</p>
+                                            <svg class="button__icon button__icon--mobile" width="20" height="20">
+                                                <use xlink:href="/img/sprite.svg#arrow-right"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="slider__arrows js-slider-controls">
+                            <a class="slider__arrow slider__arrow--left">
+                                <svg class="slider__icon" width="20" height="20">
+                                    <use xlink:href="/img/sprite.svg#arrow-right"></use>
+                                </svg>
+                            </a>
+                            <a class="slider__arrow">
+                                <svg class="slider__icon" width="20" height="20">
+                                    <use xlink:href="/img/sprite.svg#arrow-right"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slider__column">
+                        <ul class="slider__navs js-slider-nav">
+                            <li class="slider__nav">
+                                <div class="info">
+                                    <p class="info__date">05 января</p>
+                                    <p class="info__title">Дисквалификации на матчи чемпионата РФЛ</p>
+                                </div>
+                            </li>
+                            <li class="slider__nav">
+                                <div class="info">
+                                    <p class="info__date">09 января</p>
+                                    <p class="info__title">Обзор "Перед туром" от Петра Коптева</p>
+                                </div>
+                            </li>
+                            <li class="slider__nav">
+                                <div class="info">
+                                    <p class="info__date">03 января</p>
+                                    <p class="info__title">Дисквалификации на матчи чемпионата РФЛ</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <a class="all" href="#">
+                            <p class="all__text">Все новости</p>
+                            <svg class="all__icon" width="40" height="40">
+                                <use xlink:href="/img/sprite.svg#arrow-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer class="footer">
         <div class="container">
@@ -345,6 +466,7 @@
 </div>
 <script src="plugins/jquery-3.6.0.js" type="text/javascript"></script>
 <script src="plugins/jquery.samselect/jquery.samselect.js" type="text/javascript"></script>
+<script src="plugins/tiny-slider/tiny-slider.min.js" type="text/javascript"></script>
 <script src="js/scripts.js" type="text/javascript"></script>
 </body>
 </html>

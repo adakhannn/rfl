@@ -3,6 +3,10 @@
     padding: 0 10px;
   }
   
+  .slider--main {
+    margin: 0 -10px;
+  }
+  
   .dropdown__title .dropdown__link {
     font-size: 14px;
     line-height: 18px;
@@ -40,5 +44,44 @@
     font-size: 14px;
     line-height: 16px;
     text-align: center;
+  }
+  
+  .all {
+    padding: 10px;
+  }
+  
+  .all__text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .new__date {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  
+  .new__content {
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .new__title {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  
+  .new__content {
+    height: 116px;
+  }
+  
+  .button__text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  
+  .slider__arrows {
+    gap: 10px;
+    bottom: 125px;
+    right: 10px;
   }
 }
