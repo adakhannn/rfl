@@ -147,4 +147,45 @@
     font-size: 20px;
     line-height: 24px;
   }
+  
+  .contacts__column {
+    gap: 15px;
+  }
+  
+  .contacts__list {
+    gap: 15px;
+  }
+  
+  .contacts__name {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  
+  .contacts__street {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  
+  .contacts__link {
+    gap: 10px;
+  }
+  
+  .contacts__icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .contacts__map {
+    margin: 0 -10px;
+    width: calc(100% + 20px);
+  }
+  
+  .contacts__row {
+    padding: 30px 0;
+  }
+  
+  .contacts__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }

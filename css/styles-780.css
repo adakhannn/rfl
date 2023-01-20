@@ -67,6 +67,10 @@
     display: none;
   }
   
+  .points {
+    display: flex;
+  }
+  
   .new__wrap:after {
     display: none;
   }
@@ -123,6 +127,33 @@
   }
   
   .title {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  
+  .contacts__list {
+    gap: 20px;
+  }
+  
+  .contacts__name {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  
+  .contacts__link {
+    gap: 15px;
+  }
+  
+  .contacts__icon {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .contacts__row {
+    padding: 40px 0;
+  }
+  
+  .contacts__title {
     font-size: 22px;
     line-height: 26px;
   }

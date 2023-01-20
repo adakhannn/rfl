@@ -973,7 +973,7 @@ body.fixed {
 }
 
 .points {
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 10px;
   margin: -33px 0 0;
@@ -1129,6 +1129,76 @@ body.fixed {
 }
 
 .banner__img {
+  width: 100%;
+  height: auto;
+}
+
+.contacts {
+  background-color: var(--blue-light-1);
+}
+
+.contacts__row {
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.contacts__column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 310px;
+}
+
+.contacts__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.contacts__link {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.contacts__icon {
+  fill: var(--white);
+  flex-shrink: 0;
+}
+
+.contacts__texts {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contacts__names {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.contacts__map {
+  width: 60%;
+  flex-shrink: 0;
+}
+
+.contacts__img {
   width: 100%;
   height: auto;
 }

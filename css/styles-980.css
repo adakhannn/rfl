@@ -200,4 +200,26 @@
     font-size: 20px;
     line-height: 24px;
   }
+  
+  .contacts__row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 30px;
+  }
+  
+  .contacts__map {
+    width: 100%;
+  }
+  
+  .contacts__column {
+    max-width: 100%;
+  }
+  
+  .contacts__names {
+    display: inline;
+  }
+  
+  .contacts__name {
+    display: inline;
+  }
 }
