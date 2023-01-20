@@ -1113,6 +1113,27 @@ body.fixed {
   color: var(--blue-dark);
 }
 
+.sidebar__column {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.banner {
+  display: flex;
+  width: 100%;
+}
+.banner__picture {
+  display: flex;
+  width: 100%;
+}
+
+.banner__img {
+  width: 100%;
+  height: auto;
+}
+
+
 
 
 
