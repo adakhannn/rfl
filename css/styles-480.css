@@ -98,4 +98,26 @@
     width: 7px;
     height: 7px;
   }
+  
+  .school {
+    padding: 10px;
+    gap: 5px;
+  }
+  
+  .school__name {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  
+  .school__logo {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .button {
+    font-size: 12px;
+    line-height: 16px;
+    height: 30px;
+    padding: 5px 10px;
+  }
 }

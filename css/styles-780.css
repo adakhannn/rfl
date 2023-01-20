@@ -93,6 +93,16 @@
   .points {
     top: calc(50% - 85px);
   }
+  
+  .school__group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .school__name {
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
 
 @media (max-width: 680px) {

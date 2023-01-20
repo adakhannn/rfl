@@ -95,4 +95,9 @@
     line-height: 32px;
     -webkit-line-clamp: 2;
   }
+  
+  .school__name {
+    font-size: 22px;
+    line-height: 26px;
+  }
 }

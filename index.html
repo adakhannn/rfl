@@ -106,7 +106,7 @@
                 </div>
             </div>
             <div class="header__bottom">
-                <div class="header__wrap">
+                <div class="header__wrap limiter">
                     <div class="menu">
                         <ul class="menu__list">
                             <li class="menu__item menu__item--active">
@@ -277,13 +277,13 @@
         </div>
     </header>
     <main class="main">
-        <div class="slider slider--main">
+        <div class="slider limiter">
             <div class="slider__row">
                 <div class="slider__wrapper">
                     <ul class="slider__list js-tiny-slider"
                         data-controls="false"
                         data-nav="true"
-                        data-nav-container=".js-slider-nav"
+                        data-nav-container=".js-slider-nav, .js-slider-nav-1"
                         data-items="1"
                         data-loop="true"
                         data-autoplay="true"
@@ -353,11 +353,11 @@
                             </a>
                         </li>
                     </ul>
-                    <ul class="points js-slider-nav">
+                    <!--<ul class="points js-slider-nav-1">
                         <li class="points__item"></li>
                         <li class="points__item"></li>
                         <li class="points__item"></li>
-                    </ul>
+                    </ul>-->
                 </div>
                 <div class="slider__column">
                     <ul class="slider__navs js-slider-nav">
@@ -388,6 +388,15 @@
                     </a>
                 </div>
             </div>
+        </div>
+        <div class="container">
+            <a class="school" href="#">
+                <img class="school__logo" src="/img/dev/dev-square-90x90.png" width="90" height="90" alt="Лого школы">
+                <div class="school__group">
+                    <p class="school__name">Футбольная школа для детей от 3 лет</p>
+                    <div class="button">Перейти на сайт</div>
+                </div>
+            </a>
         </div>
     </main>
     <footer class="footer">
