@@ -72,6 +72,10 @@
     padding: 15px 20px;
   }
   
+  .matches__link {
+    padding: 10px 20px;
+  }
+  
   .all__text {
     font-size: 22px;
     line-height: 26px;
@@ -117,5 +121,9 @@
   .organize__text {
     font-size: 18px;
     line-height: 22px;
+  }
+  
+  .matches__list {
+    border: none;
   }
 }

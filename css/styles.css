@@ -42,6 +42,28 @@
   url("/fonts/roboto-bold.ttf") format("ttf");
 }
 
+@font-face {
+  font-family: "TTNorms";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: local('TTNorms Medium'), local('TTNorms-Medium'),
+  url("/fonts/ttnorms-medium.woff2") format("woff2"),
+  url("/fonts/ttnorms-medium.woff") format("woff"),
+  url("/fonts/ttnorms-medium.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "TTNorms";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: local('TTNorms Bold'), local('TTNorms-Bold'),
+  url("/fonts/ttnorms-bold.woff2") format("woff2"),
+  url("/fonts/ttnorms-bold.woff") format("woff"),
+  url("/fonts/ttnorms-bold.ttf") format("ttf");
+}
+
 html {
   box-sizing: border-box;
 }
@@ -68,6 +90,7 @@ html {
   --dark: #31344F;
   --dark-opacity: 49, 52, 79;
   --gray-light: #F3F3F3;
+  --gray-light-1: #DFDFDF;
   --gray: #737373;
   --gray-opacity: 115, 115, 115;
   --gray-1: #DADADA;
@@ -1202,6 +1225,157 @@ body.fixed {
   width: 100%;
   height: auto;
 }
+
+.matches {
+  display: flex;
+  flex-direction: column;
+}
+
+.matches__list {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--gray-light-1);
+  border-left: 1px solid var(--gray-light-1);
+}
+
+.matches__item {
+  border-bottom: 1px solid var(--gray-light-1);
+}
+
+.matches__link {
+  display: flex;
+  align-items: center;
+  padding: 10px 30px;
+  gap: 5px;
+}
+
+.matches__column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 23%;
+  flex-shrink: 0;
+}
+
+.matches__datetime {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.matches__digits {
+  font-size: 16px;
+  line-height: 15px;
+  color: var(--blue-light-1);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.matches__digits:first-child:after {
+  content: '';
+  width: 1px;
+  height: 15px;
+  background-color: var(--blue-light-1);
+}
+
+.matches__location {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.matches__icon {
+  flex-shrink: 0;
+}
+
+.matches__arena {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--blue-light-1);
+}
+
+.matches__teams {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.matches__team {
+  width: calc((100% - 60px) / 2);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-end;
+  flex-shrink: 0;
+}
+
+.matches__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: right;
+  text-transform: uppercase;
+  color: var(--blue-dark);
+}
+
+.matches__picture {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.matches__img {
+  flex-shrink: 0;
+}
+
+.matches__scores {
+  width: 60px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "TTNorms", "Arial", sans-serif;
+  flex-direction: column;
+}
+
+.matches__score {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--blue-light-1);
+}
+
+.matches__additional {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--blue-1);
+}
+
+.matches__team--revert .matches__name {
+  text-align: left;
+  order: 2;
+}
+
+.matches__team--revert .matches__picture {
+  order: 1;
+}
+
+.matches__team--revert {
+  justify-content: flex-start;
+}
+
+.matches__tournament {
+  text-align: right;
+  width: 23%;
+  flex-shrink: 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--blue-dark);
+}
+
 
 
 

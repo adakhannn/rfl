@@ -188,4 +188,56 @@
     font-size: 20px;
     line-height: 24px;
   }
+  
+  .matches__column {
+    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 10px;
+  }
+  
+  .matches__digits {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  
+  .matches__team {
+    gap: 5px;
+    width: calc((100% - 50px) / 2);
+  }
+  
+  .matches__name {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  
+  .matches__scores {
+    width: 50px;
+  }
+  
+  .matches__score {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  .matches__additional {
+    font-size: 10px;
+    line-height: 14px;
+  }
+  
+  .matches__tournament {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 5px 10px;
+  }
+  
+  .matches__teams {
+    padding: 7px 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .matches__picture {
+    display: none;
+  }
 }
