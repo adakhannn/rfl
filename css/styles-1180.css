@@ -1,4 +1,4 @@
-@media (max-width: 1280px) {
+@media (max-width: 1250px) {
   .header__online {
     padding: 0 10px;
   }
@@ -99,5 +99,23 @@
   .school__name {
     font-size: 22px;
     line-height: 26px;
+  }
+  
+  .main__wrap {
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    width: 100%;
+  }
+  
+  .organize__title {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  
+  .organize__text {
+    font-size: 18px;
+    line-height: 22px;
   }
 }

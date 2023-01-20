@@ -103,11 +103,38 @@
     font-size: 18px;
     line-height: 22px;
   }
+  
+  .organize {
+    padding: 20px 15px;
+  }
+  
+  .organize__title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  
+  .organize__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  
+  .content {
+    gap: 45px;
+  }
+  
+  .title {
+    font-size: 22px;
+    line-height: 26px;
+  }
 }
 
 @media (max-width: 680px) {
   .footer__navs {
     display: grid;
     grid-template-columns: repeat(2,1fr);
+  }
+  
+  .organize:after {
+    width: 100%;
   }
 }
