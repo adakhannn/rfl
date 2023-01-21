@@ -222,4 +222,33 @@
   .contacts__name {
     display: inline;
   }
+  
+  .video {
+    padding: 40px 25px;
+  }
+  
+  .video__list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .video__item:nth-child(1) .video__content {
+    position: static;
+    padding: 10px;
+  }
+  
+  .video__item .video__wrapper:before,
+  .video__item:first-child .video__wrapper:before {
+    background: linear-gradient(0deg, rgba(var(--black-opacity), 0.2), rgba(var(--black-opacity), 0.2));
+  }
+  
+  .video__item:not(:first-child) .video__name {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  
+  .video__item:first-child .video__play {
+    width: 40px;
+    height: 40px;
+  }
 }

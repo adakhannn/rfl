@@ -234,6 +234,44 @@
   .matches__teams {
     padding: 7px 10px;
   }
+  
+  .video--desktop {
+    display: none;
+  }
+  
+  .video--mobile {
+    display: block;
+    padding: 0 0 15px;
+  }
+  
+  .video__link {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .video .slider__row {
+    gap: 15px;
+  }
+  
+  .video__play {
+    top: 35px;
+    right: 35px;
+  }
+  
+  .video__item {
+    height: 100%;
+  }
+  
+  .video__content,
+  .video__item:nth-child(1) .video__content {
+    flex-grow: 1;
+    height: 90px;
+  }
+  
+  .video__name {
+    -webkit-line-clamp: 2;
+    margin: auto 0;
+  }
 }
 
 @media (max-width: 400px) {

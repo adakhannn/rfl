@@ -32,7 +32,7 @@
   }
   
   .all {
-    padding: 15px;
+    padding: 20px;
   }
   
   .all__text {
@@ -51,6 +51,7 @@
     background-color: var(--blue-dark);
     height: 170px;
     justify-content: space-between;
+    padding: 20px;
   }
   
   .new__title {
@@ -170,19 +171,32 @@
   .matches__column {
     width: 100%;
     flex-direction: row;
-    padding: 10px 15px;
+    padding: 10px 20px;
     border-bottom: 1px solid var(--gray-light-1);
     justify-content: center;
   }
   
   .matches__teams {
-    padding: 7px 15px;
+    padding: 7px 20px;
     border-bottom: 1px solid var(--gray-light-1);
   }
   
   .matches__tournament {
     width: 100%;
-    padding: 10px 15px;
+    padding: 10px 20px;
+  }
+  
+  .video__item:not(:first-child) .video__name {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  
+  .video {
+    padding: 30px 20px;
+  }
+  
+  .video__list {
+    gap: 15px;
   }
 }
 
