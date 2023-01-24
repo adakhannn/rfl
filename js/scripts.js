@@ -436,7 +436,8 @@ var sam = new function() {
     
     this.init = function() {
       let $hamburger = $('.js-hamburger'),
-        $hamburgerOpen = $('.js-hamburger-open');
+          $hamburgerOpen = $('.js-hamburger-open'),
+          hasSubmenu = $('.js-has-submenu');
       
       $hamburger.click(function() {
         $hamburgerOpen.toggleClass('open');
@@ -459,6 +460,12 @@ var sam = new function() {
             }
           }
         }
+      });
+  
+      $(hasSubmenu).click(function() {
+        var submenu = $(this).find('.js-submenu');
+        $(this).toggleClass('open');
+        $(submenu).toggleClass('open');
       });
     };
   };
