@@ -3,7 +3,7 @@
     padding: 0 10px;
   }
   
-  .dropdown__title .dropdown__link {
+  .dropdown--dark .dropdown__title .dropdown__link {
     font-size: 14px;
     line-height: 18px;
   }
@@ -80,11 +80,11 @@
     margin: 0 0 0 -10px;
   }
   
-  .dropdown__title {
+  .dropdown--dark .dropdown__title {
     padding: 0 10px;
   }
   
-  .dropdown__option .dropdown__link {
+  .dropdown--dark .dropdown__option .dropdown__link {
     padding: 10px;
   }
   
@@ -114,7 +114,7 @@
     height: 80px;
   }
   
-  .button {
+  .button--uppercase {
     font-size: 12px;
     line-height: 16px;
     height: 30px;
@@ -271,6 +271,70 @@
   .video__name {
     -webkit-line-clamp: 2;
     margin: auto 0;
+  }
+  
+  .thead__column {
+    gap: 20px;
+  }
+  
+  .back__text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  
+  .back__icon {
+    width: 15px;
+    height: auto;
+  }
+  
+  .find__input {
+    font-size: 14px;
+    line-height: 18px;
+    width: 110px;
+  }
+  
+  .tabs__link {
+    padding: 5px 10px;
+  }
+  
+  .tabs__navigation {
+    grid-template-columns: repeat(2,1fr);
+  }
+  
+  .dropdown--white .dropdown__title .dropdown__link {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  
+  .filters-container {
+    gap: 10px;
+  }
+  
+  .filters {
+    gap: 10px;
+  }
+  
+  .indicators__tour {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  
+  .table__th {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  
+  .table__position {
+    width: 35px;
+  }
+  
+  .table-tournament__info {
+    gap: 5px;
+  }
+  
+  .table-tournament__name {
+    font-size: 14px;
+    line-height: 18px;
   }
 }
 

@@ -1,0 +1,1925 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>РФЛ</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="plugins/tiny-slider/tiny-slider.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/styles-1180.css" rel="stylesheet">
+    <link href="css/styles-980.css" rel="stylesheet">
+    <link href="css/styles-780.css" rel="stylesheet">
+    <link href="css/styles-480.css" rel="stylesheet">
+</head>
+<body class="body">
+<div class="body__container">
+    <main class="main">
+        <div class="tournament">
+            <div class="thead">
+                <div class="container">
+                    <div class="thead__column">
+                        <div class="thead__top">
+                            <a class="back" href="#">
+                                <svg class="back__icon" width="20" height="6"><use xlink:href="img/sprite.svg#arrow-left"></use></svg>
+                                <p class="back__text">Назад</p>
+                            </a>
+                            <form class="find">
+                                <div class="find__border">
+                                    <input class="find__input" type="text" placeholder="Поиск">
+                                    <button class="find__button">
+                                        <svg class="find__icon" width="22" height="22"><use xlink:href="img/sprite.svg#search"></use></svg>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <h2 class="title">Летний чемпионат “РФЛ-Самара” 2023</h2>
+                        <section class="tabs">
+                            <ul class="tabs__navigation js-tabs" data-cont-id="tabs-content-tournament">
+                                <li class="tabs__item tabs__item--active" data-tab-id="tab-tournament-table">
+                                    <a class="tabs__link">Таблица</a>
+                                </li>
+                                <li class="tabs__item" data-tab-id="tab-tournament-chess">
+                                    <a class="tabs__link">Шахматка</a>
+                                </li>
+                                <li class="tabs__item" data-tab-id="tab-tournament-calendar">
+                                    <a class="tabs__link">Календарь</a>
+                                </li>
+                                <li class="tabs__item" data-tab-id="tab-tournament-news">
+                                    <a class="tabs__link">Новости</a>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <section class="tabs">
+                <div class="tabs__content" id="tabs-content-tournament">
+                    <div class="tabs__pane js-tab-cont js-show tabs__pane--active" id="tab-tournament-table">
+                        <div class="tournament__column">
+                            <div class="container">
+                                <form class="filters-container">
+                                    <ul class="filters">
+                                        <li class="filters__item filters__item--tournament">
+                                            <label class="filters__label" for="tournament">Турнир</label>
+                                            <select class="js-select" data-white="true" id="tournament">
+                                                <option>Летний чемпионат “РФЛ-Самара” 2023</option>
+                                                <option>вариант 1</option>
+                                                <option>вариант 2 длинный в несколько строчек длинный</option>
+                                            </select>
+                                        </li>
+                                        <li class="filters__item filters__item--league">
+                                            <label class="filters__label" for="league">Лига</label>
+                                            <select class="js-select" data-white="true" id="league">
+                                                <option>Премьер-Лига</option>
+                                                <option>вариант 1</option>
+                                                <option>вариант 2 длинный в несколько строчек длинный</option>
+                                            </select>
+                                        </li>
+                                    </ul>
+                                    <button class="button">Показать</button>
+                                </form>
+                            </div>
+                            <div class="container">
+                                <h2 class="title title--dark">Премьер-лига</h2>
+                            </div>
+                            <div class="slider">
+                                <div class="indicators">
+                                    <div class="container">
+                                        <div class="indicators__wrap">
+                                            <ul class="indicators__list js-tiny-slider js-slider-indicators-nav"
+                                                data-controls-container=".js-slider-indicators-controls"
+                                                data-controls="true"
+                                                data-nav="false"
+                                                data-items="8"
+                                                data-loop="false"
+                                                data-autoplay="false"
+                                                data-autoplay-timeout="10000"
+                                                data-autoplay-over-pause="true"
+                                                data-speed="1000"
+                                                data-mouse-drag="false"
+                                                data-mode="gallery"
+                                                data-touch="false"
+                                                data-responsive='{
+                                                   "320": {
+                                                       "items": "2"
+                                                   },
+                                                   "480": {
+                                                       "items": "3"
+                                                   },
+                                                   "680": {
+                                                       "items": "4"
+                                                   },
+                                                   "780": {
+                                                       "items": "5"
+                                                   },
+                                                   "980": {
+                                                       "items": "6"
+                                                   },
+                                                   "1180": {
+                                                       "items": "7"
+                                                   },
+                                                   "1250": {
+                                                       "items": "8"
+                                                   }
+                                                }'
+                                            >
+                                                <li class="indicators__item">
+                                                    <p class="indicators__tour">1 тур</p>
+                                                </li>
+                                                <li class="indicators__item">
+                                                    <p class="indicators__tour">2 тур</p>
+                                                </li>
+                                                <li class="indicators__item">
+                                                    <p class="indicators__tour">3 тур</p>
+                                                </li>
+                                                <li class="indicators__item">
+                                                    <p class="indicators__tour">4 тур</p>
+                                                </li>
+                                                <li class="indicators__item">
+                                                    <p class="indicators__tour">5 тур</p>
+                                                </li>
+                                                <li class="indicators__item">
+                                                    <p class="indicators__tour">6 тур</p>
+                                                </li>
+                                                <li class="indicators__item">
+                                                    <p class="indicators__tour">7 тур</p>
+                                                </li>
+                                                <li class="indicators__item">
+                                                    <p class="indicators__tour">8 тур</p>
+                                                </li>
+                                                <li class="indicators__item">
+                                                    <p class="indicators__tour">9 тур</p>
+                                                </li>
+                                            </ul>
+                                            <div class="indicators__arrows js-slider-indicators-controls">
+                                                <a class="indicators__arrow indicators__arrow--left">
+                                                    <svg class="indicators__icon" width="50" height="50">
+                                                        <use xlink:href="img/sprite.svg#arrow-right-big"></use>
+                                                    </svg>
+                                                </a>
+                                                <a class="indicators__arrow">
+                                                    <svg class="indicators__icon" width="50" height="50">
+                                                        <use xlink:href="img/sprite.svg#arrow-right-big"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="slider__list js-tiny-slider"
+                                    data-controls="false"
+                                    data-nav="true"
+                                    data-nav-container=".js-slider-indicators-nav"
+                                    data-items="1"
+                                    data-loop="false"
+                                    data-autoplay="false"
+                                    data-autoplay-over-pause="true"
+                                    data-speed="1000"
+                                    data-mouse-drag="false"
+                                    data-mode="gallery"
+                                    data-touch="false"
+                                >
+                                    <li class="slider__item">
+                                        <div class="container">
+                                            <div class="table-scroll">
+                                                <table class="table table-tournament">
+                                                    <thead class="table__thead">
+                                                    <tr class="table__row">
+                                                        <th class="table__th table__position">
+                                                            <p class="table__number">№</p>
+                                                        </th>
+                                                        <th class="table__th table-tournament__team">Команда</th>
+                                                        <th class="table__th"></th>
+                                                        <th class="table__th">Общ</th>
+                                                        <th class="table__th">И</th>
+                                                        <th class="table__th">В</th>
+                                                        <th class="table__th">Н</th>
+                                                        <th class="table__th">П</th>
+                                                        <th class="table__th">Г</th>
+                                                        <th class="table__th">Пр</th>
+                                                        <th class="table__th">Раз</th>
+                                                        <th class="table__th">Очки</th>
+                                                        <th class="table__th table-tournament__form">Форма</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody class="table__tbody">
+                                                    <tr class="table__row">
+                                                        <td class="table__cell table__position">
+                                                            <p class="table__number">1</p>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__team">
+                                                            <a class="table-tournament__info" href="#">
+                                                                <picture class="table-tournament__picture">
+                                                                    <img class="table-tournament__img" src="img/dev/dev-square-25x25.png"
+                                                                         srcset="img/dev/dev-square-50x50.png 2x"
+                                                                         width="25" height="25" alt="Лого команды Дортмунд">
+                                                                </picture>
+                                                                <p class="table-tournament__name">Очень длинное название команды на несколько строчек</p>
+                                                            </a>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__status table__border-right">
+                                                            <!--Если у команды не изменилась позиция, то добавляем класс table-tournament__position--normal
+                                                            Если поднялась, то добавляем класс table-tournament__position--up
+                                                            Если спустилаь, то добавляем класс table-tournament__position--down-->
+                                                            <div class="table-tournament__position table-tournament__position--normal">
+                                                                <svg class="table-tournament__icon" width="15" height="15"><use xlink:href="img/sprite.svg#circle"></use></svg>
+                                                            </div>
+                                                        </td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell table-tournament__sum">999</td>
+                                                        <td class="table__cell table-tournament__form">
+                                                            <div class="state">
+                                                                <!--Если команда проиграла один из матчев, то добавляем класс state__link--loss
+                                                                Если выиграла, то добавляем класс state__link--win
+                                                                Если проиграла, то добавляем класс state__link--draw-->
+                                                                <a class="state__link state__link--win" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--loss" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="table__row">
+                                                        <td class="table__cell table__position">
+                                                            <p class="table__number">2</p>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__team">
+                                                            <a class="table-tournament__info" href="#">
+                                                                <picture class="table-tournament__picture">
+                                                                    <img class="table-tournament__img" src="img/dev/dev-square-25x25.png"
+                                                                         srcset="img/dev/dev-square-50x50.png 2x"
+                                                                         width="25" height="25" alt="Лого команды Дортмунд">
+                                                                </picture>
+                                                                <p class="table-tournament__name">Тест тура 1</p>
+                                                            </a>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__status table__border-right">
+                                                            <!--Если у команды не изменилась позиция, то добавляем класс table-tournament__position--normal
+                                                            Если поднялась, то добавляем класс table-tournament__position--up
+                                                            Если спустилаь, то добавляем класс table-tournament__position--down-->
+                                                            <div class="table-tournament__position table-tournament__position--up">
+                                                                <svg class="table-tournament__icon" width="15" height="15"><use xlink:href="img/sprite.svg#arrow-bottom-bold"></use></svg>
+                                                            </div>
+                                                        </td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell table-tournament__sum">999</td>
+                                                        <td class="table__cell table-tournament__form">
+                                                            <div class="state">
+                                                                <!--Если команда проиграла один из матчев, то добавляем класс state__link--loss
+                                                                Если выиграла, то добавляем класс state__link--win
+                                                                Если проиграла, то добавляем класс state__link--draw-->
+                                                                <a class="state__link state__link--win" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--loss" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="table__row">
+                                                        <td class="table__cell table__position">
+                                                            <p class="table__number">999</p>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__team">
+                                                            <a class="table-tournament__info" href="#">
+                                                                <picture class="table-tournament__picture">
+                                                                    <img class="table-tournament__img" src="img/dev/dev-square-25x25.png"
+                                                                         srcset="img/dev/dev-square-50x50.png 2x"
+                                                                         width="25" height="25" alt="Лого команды Дортмунд">
+                                                                </picture>
+                                                                <p class="table-tournament__name">Дортмунд</p>
+                                                            </a>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__status table__border-right">
+                                                            <!--Если у команды не изменилась позиция, то добавляем класс table-tournament__position--normal
+                                                            Если поднялась, то добавляем класс table-tournament__position--up
+                                                            Если спустилаь, то добавляем класс table-tournament__position--down-->
+                                                            <div class="table-tournament__position table-tournament__position--down">
+                                                                <svg class="table-tournament__icon" width="15" height="15"><use xlink:href="img/sprite.svg#arrow-bottom-bold"></use></svg>
+                                                            </div>
+                                                        </td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell table-tournament__sum">999</td>
+                                                        <td class="table__cell table-tournament__form">
+                                                            <div class="state">
+                                                                <!--Если команда проиграла один из матчев, то добавляем класс state__link--loss
+                                                                Если выиграла, то добавляем класс state__link--win
+                                                                Если проиграла, то добавляем класс state__link--draw-->
+                                                                <a class="state__link state__link--win" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--loss" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="slider__item">
+                                        <div class="container">
+                                            <div class="table-scroll">
+                                                <table class="table table-tournament">
+                                                    <thead class="table__thead">
+                                                    <tr class="table__row">
+                                                        <th class="table__th table__position">
+                                                            <p class="table__number">№</p>
+                                                        </th>
+                                                        <th class="table__th table-tournament__team">Команда</th>
+                                                        <th class="table__th"></th>
+                                                        <th class="table__th">Общ</th>
+                                                        <th class="table__th">И</th>
+                                                        <th class="table__th">В</th>
+                                                        <th class="table__th">Н</th>
+                                                        <th class="table__th">П</th>
+                                                        <th class="table__th">Г</th>
+                                                        <th class="table__th">Пр</th>
+                                                        <th class="table__th">Раз</th>
+                                                        <th class="table__th">Очки</th>
+                                                        <th class="table__th table-tournament__form">Форма</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody class="table__tbody">
+                                                    <tr class="table__row">
+                                                        <td class="table__cell table__position">
+                                                            <p class="table__number">1</p>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__team">
+                                                            <a class="table-tournament__info" href="#">
+                                                                <picture class="table-tournament__picture">
+                                                                    <img class="table-tournament__img" src="img/dev/dev-square-25x25.png"
+                                                                         srcset="img/dev/dev-square-50x50.png 2x"
+                                                                         width="25" height="25" alt="Лого команды Дортмунд">
+                                                                </picture>
+                                                                <p class="table-tournament__name">Очень длинное название команды на несколько строчек</p>
+                                                            </a>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__status table__border-right">
+                                                            <!--Если у команды не изменилась позиция, то добавляем класс table-tournament__position--normal
+                                                            Если поднялась, то добавляем класс table-tournament__position--up
+                                                            Если спустилаь, то добавляем класс table-tournament__position--down-->
+                                                            <div class="table-tournament__position table-tournament__position--normal">
+                                                                <svg class="table-tournament__icon" width="15" height="15"><use xlink:href="img/sprite.svg#circle"></use></svg>
+                                                            </div>
+                                                        </td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell table-tournament__sum">999</td>
+                                                        <td class="table__cell table-tournament__form">
+                                                            <div class="state">
+                                                                <!--Если команда проиграла один из матчев, то добавляем класс state__link--loss
+                                                                Если выиграла, то добавляем класс state__link--win
+                                                                Если проиграла, то добавляем класс state__link--draw-->
+                                                                <a class="state__link state__link--win" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--loss" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="table__row">
+                                                        <td class="table__cell table__position">
+                                                            <p class="table__number">2</p>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__team">
+                                                            <a class="table-tournament__info" href="#">
+                                                                <picture class="table-tournament__picture">
+                                                                    <img class="table-tournament__img" src="img/dev/dev-square-25x25.png"
+                                                                         srcset="img/dev/dev-square-50x50.png 2x"
+                                                                         width="25" height="25" alt="Лого команды Дортмунд">
+                                                                </picture>
+                                                                <p class="table-tournament__name">Тест тура 2</p>
+                                                            </a>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__status table__border-right">
+                                                            <!--Если у команды не изменилась позиция, то добавляем класс table-tournament__position--normal
+                                                            Если поднялась, то добавляем класс table-tournament__position--up
+                                                            Если спустилаь, то добавляем класс table-tournament__position--down-->
+                                                            <div class="table-tournament__position table-tournament__position--up">
+                                                                <svg class="table-tournament__icon" width="15" height="15"><use xlink:href="img/sprite.svg#arrow-bottom-bold"></use></svg>
+                                                            </div>
+                                                        </td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell table-tournament__sum">999</td>
+                                                        <td class="table__cell table-tournament__form">
+                                                            <div class="state">
+                                                                <!--Если команда проиграла один из матчев, то добавляем класс state__link--loss
+                                                                Если выиграла, то добавляем класс state__link--win
+                                                                Если проиграла, то добавляем класс state__link--draw-->
+                                                                <a class="state__link state__link--win" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--loss" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="table__row">
+                                                        <td class="table__cell table__position">
+                                                            <p class="table__number">999</p>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__team">
+                                                            <a class="table-tournament__info" href="#">
+                                                                <picture class="table-tournament__picture">
+                                                                    <img class="table-tournament__img" src="img/dev/dev-square-25x25.png"
+                                                                         srcset="img/dev/dev-square-50x50.png 2x"
+                                                                         width="25" height="25" alt="Лого команды Дортмунд">
+                                                                </picture>
+                                                                <p class="table-tournament__name">Дортмунд</p>
+                                                            </a>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__status table__border-right">
+                                                            <!--Если у команды не изменилась позиция, то добавляем класс table-tournament__position--normal
+                                                            Если поднялась, то добавляем класс table-tournament__position--up
+                                                            Если спустилаь, то добавляем класс table-tournament__position--down-->
+                                                            <div class="table-tournament__position table-tournament__position--down">
+                                                                <svg class="table-tournament__icon" width="15" height="15"><use xlink:href="img/sprite.svg#arrow-bottom-bold"></use></svg>
+                                                            </div>
+                                                        </td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell table-tournament__sum">999</td>
+                                                        <td class="table__cell table-tournament__form">
+                                                            <div class="state">
+                                                                <!--Если команда проиграла один из матчев, то добавляем класс state__link--loss
+                                                                Если выиграла, то добавляем класс state__link--win
+                                                                Если проиграла, то добавляем класс state__link--draw-->
+                                                                <a class="state__link state__link--win" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--loss" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="slider__item">
+                                        <div class="container">
+                                            <div class="table-scroll">
+                                                <table class="table table-tournament">
+                                                    <thead class="table__thead">
+                                                    <tr class="table__row">
+                                                        <th class="table__th table__position">
+                                                            <p class="table__number">№</p>
+                                                        </th>
+                                                        <th class="table__th table-tournament__team">Команда</th>
+                                                        <th class="table__th"></th>
+                                                        <th class="table__th">Общ</th>
+                                                        <th class="table__th">И</th>
+                                                        <th class="table__th">В</th>
+                                                        <th class="table__th">Н</th>
+                                                        <th class="table__th">П</th>
+                                                        <th class="table__th">Г</th>
+                                                        <th class="table__th">Пр</th>
+                                                        <th class="table__th">Раз</th>
+                                                        <th class="table__th">Очки</th>
+                                                        <th class="table__th table-tournament__form">Форма</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody class="table__tbody">
+                                                    <tr class="table__row">
+                                                        <td class="table__cell table__position">
+                                                            <p class="table__number">1</p>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__team">
+                                                            <a class="table-tournament__info" href="#">
+                                                                <picture class="table-tournament__picture">
+                                                                    <img class="table-tournament__img" src="img/dev/dev-square-25x25.png"
+                                                                         srcset="img/dev/dev-square-50x50.png 2x"
+                                                                         width="25" height="25" alt="Лого команды Дортмунд">
+                                                                </picture>
+                                                                <p class="table-tournament__name">Очень длинное название команды на несколько строчек</p>
+                                                            </a>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__status table__border-right">
+                                                            <!--Если у команды не изменилась позиция, то добавляем класс table-tournament__position--normal
+                                                            Если поднялась, то добавляем класс table-tournament__position--up
+                                                            Если спустилаь, то добавляем класс table-tournament__position--down-->
+                                                            <div class="table-tournament__position table-tournament__position--normal">
+                                                                <svg class="table-tournament__icon" width="15" height="15"><use xlink:href="img/sprite.svg#circle"></use></svg>
+                                                            </div>
+                                                        </td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell table-tournament__sum">999</td>
+                                                        <td class="table__cell table-tournament__form">
+                                                            <div class="state">
+                                                                <!--Если команда проиграла один из матчев, то добавляем класс state__link--loss
+                                                                Если выиграла, то добавляем класс state__link--win
+                                                                Если проиграла, то добавляем класс state__link--draw-->
+                                                                <a class="state__link state__link--win" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--loss" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="table__row">
+                                                        <td class="table__cell table__position">
+                                                            <p class="table__number">2</p>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__team">
+                                                            <a class="table-tournament__info" href="#">
+                                                                <picture class="table-tournament__picture">
+                                                                    <img class="table-tournament__img" src="img/dev/dev-square-25x25.png"
+                                                                         srcset="img/dev/dev-square-50x50.png 2x"
+                                                                         width="25" height="25" alt="Лого команды Дортмунд">
+                                                                </picture>
+                                                                <p class="table-tournament__name">Тест тура 3</p>
+                                                            </a>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__status table__border-right">
+                                                            <!--Если у команды не изменилась позиция, то добавляем класс table-tournament__position--normal
+                                                            Если поднялась, то добавляем класс table-tournament__position--up
+                                                            Если спустилаь, то добавляем класс table-tournament__position--down-->
+                                                            <div class="table-tournament__position table-tournament__position--up">
+                                                                <svg class="table-tournament__icon" width="15" height="15"><use xlink:href="img/sprite.svg#arrow-bottom-bold"></use></svg>
+                                                            </div>
+                                                        </td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell table-tournament__sum">999</td>
+                                                        <td class="table__cell table-tournament__form">
+                                                            <div class="state">
+                                                                <!--Если команда проиграла один из матчев, то добавляем класс state__link--loss
+                                                                Если выиграла, то добавляем класс state__link--win
+                                                                Если проиграла, то добавляем класс state__link--draw-->
+                                                                <a class="state__link state__link--win" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--loss" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="table__row">
+                                                        <td class="table__cell table__position">
+                                                            <p class="table__number">999</p>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__team">
+                                                            <a class="table-tournament__info" href="#">
+                                                                <picture class="table-tournament__picture">
+                                                                    <img class="table-tournament__img" src="img/dev/dev-square-25x25.png"
+                                                                         srcset="img/dev/dev-square-50x50.png 2x"
+                                                                         width="25" height="25" alt="Лого команды Дортмунд">
+                                                                </picture>
+                                                                <p class="table-tournament__name">Дортмунд</p>
+                                                            </a>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__status table__border-right">
+                                                            <!--Если у команды не изменилась позиция, то добавляем класс table-tournament__position--normal
+                                                            Если поднялась, то добавляем класс table-tournament__position--up
+                                                            Если спустилаь, то добавляем класс table-tournament__position--down-->
+                                                            <div class="table-tournament__position table-tournament__position--down">
+                                                                <svg class="table-tournament__icon" width="15" height="15"><use xlink:href="img/sprite.svg#arrow-bottom-bold"></use></svg>
+                                                            </div>
+                                                        </td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell table-tournament__sum">999</td>
+                                                        <td class="table__cell table-tournament__form">
+                                                            <div class="state">
+                                                                <!--Если команда проиграла один из матчев, то добавляем класс state__link--loss
+                                                                Если выиграла, то добавляем класс state__link--win
+                                                                Если проиграла, то добавляем класс state__link--draw-->
+                                                                <a class="state__link state__link--win" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--loss" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="slider__item">
+                                        <div class="container">
+                                            <div class="table-scroll">
+                                                <table class="table table-tournament">
+                                                    <thead class="table__thead">
+                                                    <tr class="table__row">
+                                                        <th class="table__th table__position">
+                                                            <p class="table__number">№</p>
+                                                        </th>
+                                                        <th class="table__th table-tournament__team">Команда</th>
+                                                        <th class="table__th"></th>
+                                                        <th class="table__th">Общ</th>
+                                                        <th class="table__th">И</th>
+                                                        <th class="table__th">В</th>
+                                                        <th class="table__th">Н</th>
+                                                        <th class="table__th">П</th>
+                                                        <th class="table__th">Г</th>
+                                                        <th class="table__th">Пр</th>
+                                                        <th class="table__th">Раз</th>
+                                                        <th class="table__th">Очки</th>
+                                                        <th class="table__th table-tournament__form">Форма</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody class="table__tbody">
+                                                    <tr class="table__row">
+                                                        <td class="table__cell table__position">
+                                                            <p class="table__number">1</p>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__team">
+                                                            <a class="table-tournament__info" href="#">
+                                                                <picture class="table-tournament__picture">
+                                                                    <img class="table-tournament__img" src="img/dev/dev-square-25x25.png"
+                                                                         srcset="img/dev/dev-square-50x50.png 2x"
+                                                                         width="25" height="25" alt="Лого команды Дортмунд">
+                                                                </picture>
+                                                                <p class="table-tournament__name">Очень длинное название команды на несколько строчек</p>
+                                                            </a>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__status table__border-right">
+                                                            <!--Если у команды не изменилась позиция, то добавляем класс table-tournament__position--normal
+                                                            Если поднялась, то добавляем класс table-tournament__position--up
+                                                            Если спустилаь, то добавляем класс table-tournament__position--down-->
+                                                            <div class="table-tournament__position table-tournament__position--normal">
+                                                                <svg class="table-tournament__icon" width="15" height="15"><use xlink:href="img/sprite.svg#circle"></use></svg>
+                                                            </div>
+                                                        </td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell table-tournament__sum">999</td>
+                                                        <td class="table__cell table-tournament__form">
+                                                            <div class="state">
+                                                                <!--Если команда проиграла один из матчев, то добавляем класс state__link--loss
+                                                                Если выиграла, то добавляем класс state__link--win
+                                                                Если проиграла, то добавляем класс state__link--draw-->
+                                                                <a class="state__link state__link--win" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--loss" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="table__row">
+                                                        <td class="table__cell table__position">
+                                                            <p class="table__number">2</p>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__team">
+                                                            <a class="table-tournament__info" href="#">
+                                                                <picture class="table-tournament__picture">
+                                                                    <img class="table-tournament__img" src="img/dev/dev-square-25x25.png"
+                                                                         srcset="img/dev/dev-square-50x50.png 2x"
+                                                                         width="25" height="25" alt="Лого команды Дортмунд">
+                                                                </picture>
+                                                                <p class="table-tournament__name">Тест тура 4</p>
+                                                            </a>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__status table__border-right">
+                                                            <!--Если у команды не изменилась позиция, то добавляем класс table-tournament__position--normal
+                                                            Если поднялась, то добавляем класс table-tournament__position--up
+                                                            Если спустилаь, то добавляем класс table-tournament__position--down-->
+                                                            <div class="table-tournament__position table-tournament__position--up">
+                                                                <svg class="table-tournament__icon" width="15" height="15"><use xlink:href="img/sprite.svg#arrow-bottom-bold"></use></svg>
+                                                            </div>
+                                                        </td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell table-tournament__sum">999</td>
+                                                        <td class="table__cell table-tournament__form">
+                                                            <div class="state">
+                                                                <!--Если команда проиграла один из матчев, то добавляем класс state__link--loss
+                                                                Если выиграла, то добавляем класс state__link--win
+                                                                Если проиграла, то добавляем класс state__link--draw-->
+                                                                <a class="state__link state__link--win" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--loss" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="table__row">
+                                                        <td class="table__cell table__position">
+                                                            <p class="table__number">999</p>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__team">
+                                                            <a class="table-tournament__info" href="#">
+                                                                <picture class="table-tournament__picture">
+                                                                    <img class="table-tournament__img" src="img/dev/dev-square-25x25.png"
+                                                                         srcset="img/dev/dev-square-50x50.png 2x"
+                                                                         width="25" height="25" alt="Лого команды Дортмунд">
+                                                                </picture>
+                                                                <p class="table-tournament__name">Дортмунд</p>
+                                                            </a>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__status table__border-right">
+                                                            <!--Если у команды не изменилась позиция, то добавляем класс table-tournament__position--normal
+                                                            Если поднялась, то добавляем класс table-tournament__position--up
+                                                            Если спустилаь, то добавляем класс table-tournament__position--down-->
+                                                            <div class="table-tournament__position table-tournament__position--down">
+                                                                <svg class="table-tournament__icon" width="15" height="15"><use xlink:href="img/sprite.svg#arrow-bottom-bold"></use></svg>
+                                                            </div>
+                                                        </td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell table-tournament__sum">999</td>
+                                                        <td class="table__cell table-tournament__form">
+                                                            <div class="state">
+                                                                <!--Если команда проиграла один из матчев, то добавляем класс state__link--loss
+                                                                Если выиграла, то добавляем класс state__link--win
+                                                                Если проиграла, то добавляем класс state__link--draw-->
+                                                                <a class="state__link state__link--win" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--loss" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="slider__item">
+                                        <div class="container">
+                                            <div class="table-scroll">
+                                                <table class="table table-tournament">
+                                                    <thead class="table__thead">
+                                                    <tr class="table__row">
+                                                        <th class="table__th table__position">
+                                                            <p class="table__number">№</p>
+                                                        </th>
+                                                        <th class="table__th table-tournament__team">Команда</th>
+                                                        <th class="table__th"></th>
+                                                        <th class="table__th">Общ</th>
+                                                        <th class="table__th">И</th>
+                                                        <th class="table__th">В</th>
+                                                        <th class="table__th">Н</th>
+                                                        <th class="table__th">П</th>
+                                                        <th class="table__th">Г</th>
+                                                        <th class="table__th">Пр</th>
+                                                        <th class="table__th">Раз</th>
+                                                        <th class="table__th">Очки</th>
+                                                        <th class="table__th table-tournament__form">Форма</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody class="table__tbody">
+                                                    <tr class="table__row">
+                                                        <td class="table__cell table__position">
+                                                            <p class="table__number">1</p>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__team">
+                                                            <a class="table-tournament__info" href="#">
+                                                                <picture class="table-tournament__picture">
+                                                                    <img class="table-tournament__img" src="img/dev/dev-square-25x25.png"
+                                                                         srcset="img/dev/dev-square-50x50.png 2x"
+                                                                         width="25" height="25" alt="Лого команды Дортмунд">
+                                                                </picture>
+                                                                <p class="table-tournament__name">Очень длинное название команды на несколько строчек</p>
+                                                            </a>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__status table__border-right">
+                                                            <!--Если у команды не изменилась позиция, то добавляем класс table-tournament__position--normal
+                                                            Если поднялась, то добавляем класс table-tournament__position--up
+                                                            Если спустилаь, то добавляем класс table-tournament__position--down-->
+                                                            <div class="table-tournament__position table-tournament__position--normal">
+                                                                <svg class="table-tournament__icon" width="15" height="15"><use xlink:href="img/sprite.svg#circle"></use></svg>
+                                                            </div>
+                                                        </td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell table-tournament__sum">999</td>
+                                                        <td class="table__cell table-tournament__form">
+                                                            <div class="state">
+                                                                <!--Если команда проиграла один из матчев, то добавляем класс state__link--loss
+                                                                Если выиграла, то добавляем класс state__link--win
+                                                                Если проиграла, то добавляем класс state__link--draw-->
+                                                                <a class="state__link state__link--win" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--loss" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="table__row">
+                                                        <td class="table__cell table__position">
+                                                            <p class="table__number">2</p>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__team">
+                                                            <a class="table-tournament__info" href="#">
+                                                                <picture class="table-tournament__picture">
+                                                                    <img class="table-tournament__img" src="img/dev/dev-square-25x25.png"
+                                                                         srcset="img/dev/dev-square-50x50.png 2x"
+                                                                         width="25" height="25" alt="Лого команды Дортмунд">
+                                                                </picture>
+                                                                <p class="table-tournament__name">Тест тура 5</p>
+                                                            </a>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__status table__border-right">
+                                                            <!--Если у команды не изменилась позиция, то добавляем класс table-tournament__position--normal
+                                                            Если поднялась, то добавляем класс table-tournament__position--up
+                                                            Если спустилаь, то добавляем класс table-tournament__position--down-->
+                                                            <div class="table-tournament__position table-tournament__position--up">
+                                                                <svg class="table-tournament__icon" width="15" height="15"><use xlink:href="img/sprite.svg#arrow-bottom-bold"></use></svg>
+                                                            </div>
+                                                        </td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell table-tournament__sum">999</td>
+                                                        <td class="table__cell table-tournament__form">
+                                                            <div class="state">
+                                                                <!--Если команда проиграла один из матчев, то добавляем класс state__link--loss
+                                                                Если выиграла, то добавляем класс state__link--win
+                                                                Если проиграла, то добавляем класс state__link--draw-->
+                                                                <a class="state__link state__link--win" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--loss" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="table__row">
+                                                        <td class="table__cell table__position">
+                                                            <p class="table__number">999</p>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__team">
+                                                            <a class="table-tournament__info" href="#">
+                                                                <picture class="table-tournament__picture">
+                                                                    <img class="table-tournament__img" src="img/dev/dev-square-25x25.png"
+                                                                         srcset="img/dev/dev-square-50x50.png 2x"
+                                                                         width="25" height="25" alt="Лого команды Дортмунд">
+                                                                </picture>
+                                                                <p class="table-tournament__name">Дортмунд</p>
+                                                            </a>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__status table__border-right">
+                                                            <!--Если у команды не изменилась позиция, то добавляем класс table-tournament__position--normal
+                                                            Если поднялась, то добавляем класс table-tournament__position--up
+                                                            Если спустилаь, то добавляем класс table-tournament__position--down-->
+                                                            <div class="table-tournament__position table-tournament__position--down">
+                                                                <svg class="table-tournament__icon" width="15" height="15"><use xlink:href="img/sprite.svg#arrow-bottom-bold"></use></svg>
+                                                            </div>
+                                                        </td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell table-tournament__sum">999</td>
+                                                        <td class="table__cell table-tournament__form">
+                                                            <div class="state">
+                                                                <!--Если команда проиграла один из матчев, то добавляем класс state__link--loss
+                                                                Если выиграла, то добавляем класс state__link--win
+                                                                Если проиграла, то добавляем класс state__link--draw-->
+                                                                <a class="state__link state__link--win" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--loss" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="slider__item">
+                                        <div class="container">
+                                            <div class="table-scroll">
+                                                <table class="table table-tournament">
+                                                    <thead class="table__thead">
+                                                    <tr class="table__row">
+                                                        <th class="table__th table__position">
+                                                            <p class="table__number">№</p>
+                                                        </th>
+                                                        <th class="table__th table-tournament__team">Команда</th>
+                                                        <th class="table__th"></th>
+                                                        <th class="table__th">Общ</th>
+                                                        <th class="table__th">И</th>
+                                                        <th class="table__th">В</th>
+                                                        <th class="table__th">Н</th>
+                                                        <th class="table__th">П</th>
+                                                        <th class="table__th">Г</th>
+                                                        <th class="table__th">Пр</th>
+                                                        <th class="table__th">Раз</th>
+                                                        <th class="table__th">Очки</th>
+                                                        <th class="table__th table-tournament__form">Форма</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody class="table__tbody">
+                                                    <tr class="table__row">
+                                                        <td class="table__cell table__position">
+                                                            <p class="table__number">1</p>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__team">
+                                                            <a class="table-tournament__info" href="#">
+                                                                <picture class="table-tournament__picture">
+                                                                    <img class="table-tournament__img" src="img/dev/dev-square-25x25.png"
+                                                                         srcset="img/dev/dev-square-50x50.png 2x"
+                                                                         width="25" height="25" alt="Лого команды Дортмунд">
+                                                                </picture>
+                                                                <p class="table-tournament__name">Очень длинное название команды на несколько строчек</p>
+                                                            </a>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__status table__border-right">
+                                                            <!--Если у команды не изменилась позиция, то добавляем класс table-tournament__position--normal
+                                                            Если поднялась, то добавляем класс table-tournament__position--up
+                                                            Если спустилаь, то добавляем класс table-tournament__position--down-->
+                                                            <div class="table-tournament__position table-tournament__position--normal">
+                                                                <svg class="table-tournament__icon" width="15" height="15"><use xlink:href="img/sprite.svg#circle"></use></svg>
+                                                            </div>
+                                                        </td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell table-tournament__sum">999</td>
+                                                        <td class="table__cell table-tournament__form">
+                                                            <div class="state">
+                                                                <!--Если команда проиграла один из матчев, то добавляем класс state__link--loss
+                                                                Если выиграла, то добавляем класс state__link--win
+                                                                Если проиграла, то добавляем класс state__link--draw-->
+                                                                <a class="state__link state__link--win" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--loss" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="table__row">
+                                                        <td class="table__cell table__position">
+                                                            <p class="table__number">2</p>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__team">
+                                                            <a class="table-tournament__info" href="#">
+                                                                <picture class="table-tournament__picture">
+                                                                    <img class="table-tournament__img" src="img/dev/dev-square-25x25.png"
+                                                                         srcset="img/dev/dev-square-50x50.png 2x"
+                                                                         width="25" height="25" alt="Лого команды Дортмунд">
+                                                                </picture>
+                                                                <p class="table-tournament__name">Тест тура 6</p>
+                                                            </a>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__status table__border-right">
+                                                            <!--Если у команды не изменилась позиция, то добавляем класс table-tournament__position--normal
+                                                            Если поднялась, то добавляем класс table-tournament__position--up
+                                                            Если спустилаь, то добавляем класс table-tournament__position--down-->
+                                                            <div class="table-tournament__position table-tournament__position--up">
+                                                                <svg class="table-tournament__icon" width="15" height="15"><use xlink:href="img/sprite.svg#arrow-bottom-bold"></use></svg>
+                                                            </div>
+                                                        </td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell table-tournament__sum">999</td>
+                                                        <td class="table__cell table-tournament__form">
+                                                            <div class="state">
+                                                                <!--Если команда проиграла один из матчев, то добавляем класс state__link--loss
+                                                                Если выиграла, то добавляем класс state__link--win
+                                                                Если проиграла, то добавляем класс state__link--draw-->
+                                                                <a class="state__link state__link--win" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--loss" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="table__row">
+                                                        <td class="table__cell table__position">
+                                                            <p class="table__number">999</p>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__team">
+                                                            <a class="table-tournament__info" href="#">
+                                                                <picture class="table-tournament__picture">
+                                                                    <img class="table-tournament__img" src="img/dev/dev-square-25x25.png"
+                                                                         srcset="img/dev/dev-square-50x50.png 2x"
+                                                                         width="25" height="25" alt="Лого команды Дортмунд">
+                                                                </picture>
+                                                                <p class="table-tournament__name">Дортмунд</p>
+                                                            </a>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__status table__border-right">
+                                                            <!--Если у команды не изменилась позиция, то добавляем класс table-tournament__position--normal
+                                                            Если поднялась, то добавляем класс table-tournament__position--up
+                                                            Если спустилаь, то добавляем класс table-tournament__position--down-->
+                                                            <div class="table-tournament__position table-tournament__position--down">
+                                                                <svg class="table-tournament__icon" width="15" height="15"><use xlink:href="img/sprite.svg#arrow-bottom-bold"></use></svg>
+                                                            </div>
+                                                        </td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell table-tournament__sum">999</td>
+                                                        <td class="table__cell table-tournament__form">
+                                                            <div class="state">
+                                                                <!--Если команда проиграла один из матчев, то добавляем класс state__link--loss
+                                                                Если выиграла, то добавляем класс state__link--win
+                                                                Если проиграла, то добавляем класс state__link--draw-->
+                                                                <a class="state__link state__link--win" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--loss" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="slider__item">
+                                        <div class="container">
+                                            <div class="table-scroll">
+                                                <table class="table table-tournament">
+                                                    <thead class="table__thead">
+                                                    <tr class="table__row">
+                                                        <th class="table__th table__position">
+                                                            <p class="table__number">№</p>
+                                                        </th>
+                                                        <th class="table__th table-tournament__team">Команда</th>
+                                                        <th class="table__th"></th>
+                                                        <th class="table__th">Общ</th>
+                                                        <th class="table__th">И</th>
+                                                        <th class="table__th">В</th>
+                                                        <th class="table__th">Н</th>
+                                                        <th class="table__th">П</th>
+                                                        <th class="table__th">Г</th>
+                                                        <th class="table__th">Пр</th>
+                                                        <th class="table__th">Раз</th>
+                                                        <th class="table__th">Очки</th>
+                                                        <th class="table__th table-tournament__form">Форма</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody class="table__tbody">
+                                                    <tr class="table__row">
+                                                        <td class="table__cell table__position">
+                                                            <p class="table__number">1</p>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__team">
+                                                            <a class="table-tournament__info" href="#">
+                                                                <picture class="table-tournament__picture">
+                                                                    <img class="table-tournament__img" src="img/dev/dev-square-25x25.png"
+                                                                         srcset="img/dev/dev-square-50x50.png 2x"
+                                                                         width="25" height="25" alt="Лого команды Дортмунд">
+                                                                </picture>
+                                                                <p class="table-tournament__name">Очень длинное название команды на несколько строчек</p>
+                                                            </a>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__status table__border-right">
+                                                            <!--Если у команды не изменилась позиция, то добавляем класс table-tournament__position--normal
+                                                            Если поднялась, то добавляем класс table-tournament__position--up
+                                                            Если спустилаь, то добавляем класс table-tournament__position--down-->
+                                                            <div class="table-tournament__position table-tournament__position--normal">
+                                                                <svg class="table-tournament__icon" width="15" height="15"><use xlink:href="img/sprite.svg#circle"></use></svg>
+                                                            </div>
+                                                        </td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell table-tournament__sum">999</td>
+                                                        <td class="table__cell table-tournament__form">
+                                                            <div class="state">
+                                                                <!--Если команда проиграла один из матчев, то добавляем класс state__link--loss
+                                                                Если выиграла, то добавляем класс state__link--win
+                                                                Если проиграла, то добавляем класс state__link--draw-->
+                                                                <a class="state__link state__link--win" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--loss" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="table__row">
+                                                        <td class="table__cell table__position">
+                                                            <p class="table__number">2</p>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__team">
+                                                            <a class="table-tournament__info" href="#">
+                                                                <picture class="table-tournament__picture">
+                                                                    <img class="table-tournament__img" src="img/dev/dev-square-25x25.png"
+                                                                         srcset="img/dev/dev-square-50x50.png 2x"
+                                                                         width="25" height="25" alt="Лого команды Дортмунд">
+                                                                </picture>
+                                                                <p class="table-tournament__name">Тест тура 7</p>
+                                                            </a>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__status table__border-right">
+                                                            <!--Если у команды не изменилась позиция, то добавляем класс table-tournament__position--normal
+                                                            Если поднялась, то добавляем класс table-tournament__position--up
+                                                            Если спустилаь, то добавляем класс table-tournament__position--down-->
+                                                            <div class="table-tournament__position table-tournament__position--up">
+                                                                <svg class="table-tournament__icon" width="15" height="15"><use xlink:href="img/sprite.svg#arrow-bottom-bold"></use></svg>
+                                                            </div>
+                                                        </td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell table-tournament__sum">999</td>
+                                                        <td class="table__cell table-tournament__form">
+                                                            <div class="state">
+                                                                <!--Если команда проиграла один из матчев, то добавляем класс state__link--loss
+                                                                Если выиграла, то добавляем класс state__link--win
+                                                                Если проиграла, то добавляем класс state__link--draw-->
+                                                                <a class="state__link state__link--win" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--loss" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="table__row">
+                                                        <td class="table__cell table__position">
+                                                            <p class="table__number">999</p>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__team">
+                                                            <a class="table-tournament__info" href="#">
+                                                                <picture class="table-tournament__picture">
+                                                                    <img class="table-tournament__img" src="img/dev/dev-square-25x25.png"
+                                                                         srcset="img/dev/dev-square-50x50.png 2x"
+                                                                         width="25" height="25" alt="Лого команды Дортмунд">
+                                                                </picture>
+                                                                <p class="table-tournament__name">Дортмунд</p>
+                                                            </a>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__status table__border-right">
+                                                            <!--Если у команды не изменилась позиция, то добавляем класс table-tournament__position--normal
+                                                            Если поднялась, то добавляем класс table-tournament__position--up
+                                                            Если спустилаь, то добавляем класс table-tournament__position--down-->
+                                                            <div class="table-tournament__position table-tournament__position--down">
+                                                                <svg class="table-tournament__icon" width="15" height="15"><use xlink:href="img/sprite.svg#arrow-bottom-bold"></use></svg>
+                                                            </div>
+                                                        </td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell table-tournament__sum">999</td>
+                                                        <td class="table__cell table-tournament__form">
+                                                            <div class="state">
+                                                                <!--Если команда проиграла один из матчев, то добавляем класс state__link--loss
+                                                                Если выиграла, то добавляем класс state__link--win
+                                                                Если проиграла, то добавляем класс state__link--draw-->
+                                                                <a class="state__link state__link--win" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--loss" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="slider__item">
+                                        <div class="container">
+                                            <div class="table-scroll">
+                                                <table class="table table-tournament">
+                                                    <thead class="table__thead">
+                                                    <tr class="table__row">
+                                                        <th class="table__th table__position">
+                                                            <p class="table__number">№</p>
+                                                        </th>
+                                                        <th class="table__th table-tournament__team">Команда</th>
+                                                        <th class="table__th"></th>
+                                                        <th class="table__th">Общ</th>
+                                                        <th class="table__th">И</th>
+                                                        <th class="table__th">В</th>
+                                                        <th class="table__th">Н</th>
+                                                        <th class="table__th">П</th>
+                                                        <th class="table__th">Г</th>
+                                                        <th class="table__th">Пр</th>
+                                                        <th class="table__th">Раз</th>
+                                                        <th class="table__th">Очки</th>
+                                                        <th class="table__th table-tournament__form">Форма</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody class="table__tbody">
+                                                    <tr class="table__row">
+                                                        <td class="table__cell table__position">
+                                                            <p class="table__number">1</p>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__team">
+                                                            <a class="table-tournament__info" href="#">
+                                                                <picture class="table-tournament__picture">
+                                                                    <img class="table-tournament__img" src="img/dev/dev-square-25x25.png"
+                                                                         srcset="img/dev/dev-square-50x50.png 2x"
+                                                                         width="25" height="25" alt="Лого команды Дортмунд">
+                                                                </picture>
+                                                                <p class="table-tournament__name">Очень длинное название команды на несколько строчек</p>
+                                                            </a>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__status table__border-right">
+                                                            <!--Если у команды не изменилась позиция, то добавляем класс table-tournament__position--normal
+                                                            Если поднялась, то добавляем класс table-tournament__position--up
+                                                            Если спустилаь, то добавляем класс table-tournament__position--down-->
+                                                            <div class="table-tournament__position table-tournament__position--normal">
+                                                                <svg class="table-tournament__icon" width="15" height="15"><use xlink:href="img/sprite.svg#circle"></use></svg>
+                                                            </div>
+                                                        </td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell table-tournament__sum">999</td>
+                                                        <td class="table__cell table-tournament__form">
+                                                            <div class="state">
+                                                                <!--Если команда проиграла один из матчев, то добавляем класс state__link--loss
+                                                                Если выиграла, то добавляем класс state__link--win
+                                                                Если проиграла, то добавляем класс state__link--draw-->
+                                                                <a class="state__link state__link--win" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--loss" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="table__row">
+                                                        <td class="table__cell table__position">
+                                                            <p class="table__number">2</p>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__team">
+                                                            <a class="table-tournament__info" href="#">
+                                                                <picture class="table-tournament__picture">
+                                                                    <img class="table-tournament__img" src="img/dev/dev-square-25x25.png"
+                                                                         srcset="img/dev/dev-square-50x50.png 2x"
+                                                                         width="25" height="25" alt="Лого команды Дортмунд">
+                                                                </picture>
+                                                                <p class="table-tournament__name">Тест тура 8</p>
+                                                            </a>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__status table__border-right">
+                                                            <!--Если у команды не изменилась позиция, то добавляем класс table-tournament__position--normal
+                                                            Если поднялась, то добавляем класс table-tournament__position--up
+                                                            Если спустилаь, то добавляем класс table-tournament__position--down-->
+                                                            <div class="table-tournament__position table-tournament__position--up">
+                                                                <svg class="table-tournament__icon" width="15" height="15"><use xlink:href="img/sprite.svg#arrow-bottom-bold"></use></svg>
+                                                            </div>
+                                                        </td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell table-tournament__sum">999</td>
+                                                        <td class="table__cell table-tournament__form">
+                                                            <div class="state">
+                                                                <!--Если команда проиграла один из матчев, то добавляем класс state__link--loss
+                                                                Если выиграла, то добавляем класс state__link--win
+                                                                Если проиграла, то добавляем класс state__link--draw-->
+                                                                <a class="state__link state__link--win" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--loss" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="table__row">
+                                                        <td class="table__cell table__position">
+                                                            <p class="table__number">999</p>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__team">
+                                                            <a class="table-tournament__info" href="#">
+                                                                <picture class="table-tournament__picture">
+                                                                    <img class="table-tournament__img" src="img/dev/dev-square-25x25.png"
+                                                                         srcset="img/dev/dev-square-50x50.png 2x"
+                                                                         width="25" height="25" alt="Лого команды Дортмунд">
+                                                                </picture>
+                                                                <p class="table-tournament__name">Дортмунд</p>
+                                                            </a>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__status table__border-right">
+                                                            <!--Если у команды не изменилась позиция, то добавляем класс table-tournament__position--normal
+                                                            Если поднялась, то добавляем класс table-tournament__position--up
+                                                            Если спустилаь, то добавляем класс table-tournament__position--down-->
+                                                            <div class="table-tournament__position table-tournament__position--down">
+                                                                <svg class="table-tournament__icon" width="15" height="15"><use xlink:href="img/sprite.svg#arrow-bottom-bold"></use></svg>
+                                                            </div>
+                                                        </td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell table-tournament__sum">999</td>
+                                                        <td class="table__cell table-tournament__form">
+                                                            <div class="state">
+                                                                <!--Если команда проиграла один из матчев, то добавляем класс state__link--loss
+                                                                Если выиграла, то добавляем класс state__link--win
+                                                                Если проиграла, то добавляем класс state__link--draw-->
+                                                                <a class="state__link state__link--win" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--loss" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="slider__item">
+                                        <div class="container">
+                                            <div class="table-scroll">
+                                                <table class="table table-tournament">
+                                                    <thead class="table__thead">
+                                                    <tr class="table__row">
+                                                        <th class="table__th table__position">
+                                                            <p class="table__number">№</p>
+                                                        </th>
+                                                        <th class="table__th table-tournament__team">Команда</th>
+                                                        <th class="table__th"></th>
+                                                        <th class="table__th">Общ</th>
+                                                        <th class="table__th">И</th>
+                                                        <th class="table__th">В</th>
+                                                        <th class="table__th">Н</th>
+                                                        <th class="table__th">П</th>
+                                                        <th class="table__th">Г</th>
+                                                        <th class="table__th">Пр</th>
+                                                        <th class="table__th">Раз</th>
+                                                        <th class="table__th">Очки</th>
+                                                        <th class="table__th table-tournament__form">Форма</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody class="table__tbody">
+                                                    <tr class="table__row">
+                                                        <td class="table__cell table__position">
+                                                            <p class="table__number">1</p>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__team">
+                                                            <a class="table-tournament__info" href="#">
+                                                                <picture class="table-tournament__picture">
+                                                                    <img class="table-tournament__img" src="img/dev/dev-square-25x25.png"
+                                                                         srcset="img/dev/dev-square-50x50.png 2x"
+                                                                         width="25" height="25" alt="Лого команды Дортмунд">
+                                                                </picture>
+                                                                <p class="table-tournament__name">Очень длинное название команды на несколько строчек</p>
+                                                            </a>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__status table__border-right">
+                                                            <!--Если у команды не изменилась позиция, то добавляем класс table-tournament__position--normal
+                                                            Если поднялась, то добавляем класс table-tournament__position--up
+                                                            Если спустилаь, то добавляем класс table-tournament__position--down-->
+                                                            <div class="table-tournament__position table-tournament__position--normal">
+                                                                <svg class="table-tournament__icon" width="15" height="15"><use xlink:href="img/sprite.svg#circle"></use></svg>
+                                                            </div>
+                                                        </td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell table-tournament__sum">999</td>
+                                                        <td class="table__cell table-tournament__form">
+                                                            <div class="state">
+                                                                <!--Если команда проиграла один из матчев, то добавляем класс state__link--loss
+                                                                Если выиграла, то добавляем класс state__link--win
+                                                                Если проиграла, то добавляем класс state__link--draw-->
+                                                                <a class="state__link state__link--win" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--loss" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="table__row">
+                                                        <td class="table__cell table__position">
+                                                            <p class="table__number">2</p>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__team">
+                                                            <a class="table-tournament__info" href="#">
+                                                                <picture class="table-tournament__picture">
+                                                                    <img class="table-tournament__img" src="img/dev/dev-square-25x25.png"
+                                                                         srcset="img/dev/dev-square-50x50.png 2x"
+                                                                         width="25" height="25" alt="Лого команды Дортмунд">
+                                                                </picture>
+                                                                <p class="table-tournament__name">Тест тура 9</p>
+                                                            </a>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__status table__border-right">
+                                                            <!--Если у команды не изменилась позиция, то добавляем класс table-tournament__position--normal
+                                                            Если поднялась, то добавляем класс table-tournament__position--up
+                                                            Если спустилаь, то добавляем класс table-tournament__position--down-->
+                                                            <div class="table-tournament__position table-tournament__position--up">
+                                                                <svg class="table-tournament__icon" width="15" height="15"><use xlink:href="img/sprite.svg#arrow-bottom-bold"></use></svg>
+                                                            </div>
+                                                        </td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell table-tournament__sum">999</td>
+                                                        <td class="table__cell table-tournament__form">
+                                                            <div class="state">
+                                                                <!--Если команда проиграла один из матчев, то добавляем класс state__link--loss
+                                                                Если выиграла, то добавляем класс state__link--win
+                                                                Если проиграла, то добавляем класс state__link--draw-->
+                                                                <a class="state__link state__link--win" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--loss" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="table__row">
+                                                        <td class="table__cell table__position">
+                                                            <p class="table__number">999</p>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__team">
+                                                            <a class="table-tournament__info" href="#">
+                                                                <picture class="table-tournament__picture">
+                                                                    <img class="table-tournament__img" src="img/dev/dev-square-25x25.png"
+                                                                         srcset="img/dev/dev-square-50x50.png 2x"
+                                                                         width="25" height="25" alt="Лого команды Дортмунд">
+                                                                </picture>
+                                                                <p class="table-tournament__name">Дортмунд</p>
+                                                            </a>
+                                                        </td>
+                                                        <td class="table__cell table-tournament__status table__border-right">
+                                                            <!--Если у команды не изменилась позиция, то добавляем класс table-tournament__position--normal
+                                                            Если поднялась, то добавляем класс table-tournament__position--up
+                                                            Если спустилаь, то добавляем класс table-tournament__position--down-->
+                                                            <div class="table-tournament__position table-tournament__position--down">
+                                                                <svg class="table-tournament__icon" width="15" height="15"><use xlink:href="img/sprite.svg#arrow-bottom-bold"></use></svg>
+                                                            </div>
+                                                        </td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell">999</td>
+                                                        <td class="table__cell table-tournament__sum">999</td>
+                                                        <td class="table__cell table-tournament__form">
+                                                            <div class="state">
+                                                                <!--Если команда проиграла один из матчев, то добавляем класс state__link--loss
+                                                                Если выиграла, то добавляем класс state__link--win
+                                                                Если проиграла, то добавляем класс state__link--draw-->
+                                                                <a class="state__link state__link--win" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--loss" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                                <a class="state__link state__link--draw" href="#">
+                                                                    <div class="state__circle"></div>
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__pane js-tab-cont" id="tab-tournament-chess">
+                        Содержание второго таба
+                    </div>
+                    <div class="tabs__pane js-tab-cont" id="tab-tournament-calendar">
+                        Содержание 3 таба
+                    </div>
+                    <div class="tabs__pane js-tab-cont" id="tab-tournament-news">
+                        Содержание 4 таба
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</div>
+<script src="plugins/jquery-3.6.0.js" type="text/javascript"></script>
+<script src="plugins/jquery.samselect/jquery.samselect.js" type="text/javascript"></script>
+<script src="plugins/tiny-slider/tiny-slider.min.js" type="text/javascript"></script>
+<script src="js/scripts.js" type="text/javascript"></script>
+</body>
+</html>

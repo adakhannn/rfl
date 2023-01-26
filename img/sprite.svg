@@ -19,8 +19,16 @@
   <symbol id="arrow-bottom" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
     <path fill-rule="evenodd" clip-rule="evenodd" d="M14.0781 6.99548L9.99561 11.1405L5.91355 6.99548L5.00451 7.91861L9.99561 12.9871L14.9872 7.91861L14.0781 6.99548Z"/>
   </symbol>
+  <symbol id="arrow-bottom-bold" viewBox="0 0 15 16" xmlns="http://www.w3.org/2000/svg">
+    <path d="M7.04925 13.6025L2.20913 7.37488C1.89677 6.98191 1.74883 6.45679 2.00747 6.11786C2.16296 5.9141 2.4654 5.77764 2.96741 5.77764H1.78651C1.3669 5.77764 1.13393 6.26333 1.39656 6.59059L7.74414 14.5L8.21339 13.9153C7.82007 14.0948 7.32654 13.9883 7.04925 13.6025Z"/>
+    <path d="M9.74414 4.89028L9.74414 3C9.74414 2.83041 9.74538 2.66082 9.74701 2.51073C9.75006 2.2304 9.52437 2 9.24403 2L6.11437 2C5.89959 2 5.74842 2.14407 5.74644 2.35884C5.7451 2.50507 5.74414 2.71074 5.74414 3V4.89028V5.77764L9.74414 5.77764V4.89028Z"/>
+    <path d="M12.7606 5.77764H11.0988H9.74414L5.74414 5.77764H4.62919H2.96741C2.4654 5.77764 2.16296 5.9141 2.00747 6.11786C1.74883 6.45679 1.89677 6.98191 2.20913 7.37488L7.04925 13.6025C7.32654 13.9883 7.82007 14.0948 8.21339 13.9153L13.6987 7.08034L14.0917 6.59059C14.3544 6.26333 14.1214 5.77764 13.7018 5.77764H12.7606Z"/>
+  </symbol>
   <symbol id="arrow-right" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
     <path d="M8 6L12 10L8 14" stroke-width="2" stroke-linecap="square"/>
+  </symbol>
+  <symbol id="arrow-right-big" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M18 15.2274L28.1554 25.2293L18 35.2304L20.2617 37.4575L32.6794 25.2293L20.2617 13L18 15.2274Z"/>
   </symbol>
   <symbol id="play" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
     <path fill-rule="evenodd" clip-rule="evenodd" d="M7 6.29647V9.99319V13.6898L7.29567 13.9862L13.8499 9.99319L7.29567 6L7 6.29647Z"/>
@@ -71,6 +79,12 @@
         <rect width="12" height="15" fill="white"/>
       </clipPath>
     </defs>
+  </symbol>
+  <symbol id="arrow-left" viewBox="0 0 20 6" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 3L5 5.88675V0.113249L0 3ZM4.5 3.5H20V2.5H4.5V3.5Z"/>
+  </symbol>
+  <symbol id="circle" viewBox="0 0 15 16" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="8" cy="8" r="6" fill="#146BA7"/>
   </symbol>
 </svg>
 <!--Вставка <svg class="" width="" height= ""><use xlink:href="/img/sprite.svg#id"></use></svg>-->

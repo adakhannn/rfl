@@ -19,6 +19,7 @@ var sam = new function() {
   self.init = function() {
     self.empty.init();
     self.sectionsMobile.init();
+    self.tabs.init();
     self.select.init();
     self.dropdown.init();
     self.collapse.init();
@@ -30,7 +31,6 @@ var sam = new function() {
     self.disclaimer.init();
     self.form.init();
     self.nicescroll.init();
-    self.tabs.init();
     self.share.init();
     self.circleProgressBar.init();
     
@@ -70,6 +70,101 @@ var sam = new function() {
         });
       }
     }
+  };
+  
+  this.tabs = new function() {
+    var that = this;
+    
+    this.init = function() {
+      $('.js-tabs:not(.js-already-init)').each(function() {
+        that.build(this);
+      });
+      
+      $('.js-scroll-tabs').each(function() {
+        that.scroll(this);
+      });
+    };
+    
+    this.customize = {
+      li: function(ul, li) {
+        let styleClass = $(ul).data('menu') ? 'menu__item--active' : 'tabs__item--active'
+        if ($(li).hasClass('js-active')) {
+          $(li).addClass(styleClass);
+        } else {
+          $(li).removeClass(styleClass);
+        }
+      },
+      tab: function(ul, tab) {
+        if ($(tab).hasClass('js-show')) {
+          $(tab).addClass('tabs__pane--active');
+        } else {
+          $(tab).removeClass('tabs__pane--active');
+        }
+      }
+    };
+    
+    this.build = function(ul) {
+      if (!$(ul).data('cont-id') && !$($(ul).data('cont-selector'))) {
+        return false;
+      }
+      
+      var tabsCont;
+      if ($(ul).data('cont-id')) {
+        tabsCont = $('#' + $(ul).data('cont-id'));
+      } else {
+        tabsCont = $($(ul).data('cont-selector'));
+      }
+      
+      $(ul).find('li a').click(function() {
+        var li = $(this).parents('li');
+        $(ul).find('li.js-active').removeClass('js-active');
+        $(li).addClass('js-active');
+        $(ul).find('li').each(function() {
+          that.customize.li(ul, this);
+        });
+        
+        var tabContSelector;
+        if ($(li).data('tab-id')) {
+          tabContSelector = '>.js-tab-cont#' + $(li).data('tab-id');
+        } else if ($(ul).data('tab-selector')) {
+          tabContSelector = '>.js-tab-cont' + $(li).data('tab-selector');
+        }
+        
+        var tab = $(tabsCont).find(tabContSelector);
+        $(tabsCont).find('>.js-tab-cont.js-show').removeClass('js-show').hide();
+        $(tab).addClass('js-show').show();
+        $.each($(tabsCont).find('>.js-tab-cont'), function() {
+          that.customize.tab(ul, this);
+        });
+        
+        var tabsCallback = $(ul).data('callback');
+        if (tabsCallback && that.callbacks[tabsCallback]) {
+          that.callbacks[tabsCallback](ul);
+        }
+        
+        $('html').getNiceScroll().resize();
+      });
+      
+      $(ul).addClass('js-already-init');
+    };
+    
+    this.destroy = function(ul) {
+      $(ul).find('li a').off('click');
+    };
+    
+    this.scroll = function() {
+      var $tabItems  = $(scrollTabs).find('.tabs__item'),
+        $activeTab = $(scrollTabs).find('.tabs__item--active'),
+        x = $activeTab.offset().left;
+      
+      if ($tabItems.last().hasClass('tabs__item--active')) {
+        $(scrollTabs).scrollLeft(x) + $(scrollTabs).width();
+      } else {
+        $(scrollTabs).scrollLeft(x);
+      }
+    }
+    
+    this.callbacks = {};
   };
   
   this.select = new function() {
@@ -777,101 +872,6 @@ var sam = new function() {
         'railpadding'          : { top: 0, right: 12, left: 12, bottom: 0 }
       };
     };
-  };
-  
-  this.tabs = new function() {
-    var that = this;
-    
-    this.init = function() {
-      $('.js-tabs:not(.js-already-init)').each(function() {
-        that.build(this);
-      });
-      
-      $('.js-scroll-tabs').each(function() {
-        that.scroll(this);
-      });
-    };
-    
-    this.customize = {
-      li: function(ul, li) {
-        let styleClass = $(ul).data('menu') ? 'menu__item--active' : 'tabs__item--active'
-        if ($(li).hasClass('js-active')) {
-          $(li).addClass(styleClass);
-        } else {
-          $(li).removeClass(styleClass);
-        }
-      },
-      tab: function(ul, tab) {
-        if ($(tab).hasClass('js-show')) {
-          $(tab).addClass('tabs__pane--active');
-        } else {
-          $(tab).removeClass('tabs__pane--active');
-        }
-      }
-    };
-    
-    this.build = function(ul) {
-      if (!$(ul).data('cont-id') && !$($(ul).data('cont-selector'))) {
-        return false;
-      }
-      
-      var tabsCont;
-      if ($(ul).data('cont-id')) {
-        tabsCont = $('#' + $(ul).data('cont-id'));
-      } else {
-        tabsCont = $($(ul).data('cont-selector'));
-      }
-      
-      $(ul).find('li a').click(function() {
-        var li = $(this).parents('li');
-        $(ul).find('li.js-active').removeClass('js-active');
-        $(li).addClass('js-active');
-        $(ul).find('li').each(function() {
-          that.customize.li(ul, this);
-        });
-        
-        var tabContSelector;
-        if ($(li).data('tab-id')) {
-          tabContSelector = '>.js-tab-cont#' + $(li).data('tab-id');
-        } else if ($(ul).data('tab-selector')) {
-          tabContSelector = '>.js-tab-cont' + $(li).data('tab-selector');
-        }
-        
-        var tab = $(tabsCont).find(tabContSelector);
-        $(tabsCont).find('>.js-tab-cont.js-show').removeClass('js-show').hide();
-        $(tab).addClass('js-show').show();
-        $.each($(tabsCont).find('>.js-tab-cont'), function() {
-          that.customize.tab(ul, this);
-        });
-        
-        var tabsCallback = $(ul).data('callback');
-        if (tabsCallback && that.callbacks[tabsCallback]) {
-          that.callbacks[tabsCallback](ul);
-        }
-        
-        $('html').getNiceScroll().resize();
-      });
-      
-      $(ul).addClass('js-already-init');
-    };
-    
-    this.destroy = function(ul) {
-      $(ul).find('li a').off('click');
-    };
-    
-    this.scroll = function() {
-      var $tabItems  = $(scrollTabs).find('.tabs__item'),
-        $activeTab = $(scrollTabs).find('.tabs__item--active'),
-        x = $activeTab.offset().left;
-      
-      if ($tabItems.last().hasClass('tabs__item--active')) {
-        $(scrollTabs).scrollLeft(x) + $(scrollTabs).width();
-      } else {
-        $(scrollTabs).scrollLeft(x);
-      }
-    }
-    
-    this.callbacks = {};
   };
   
   this.share = new function() {

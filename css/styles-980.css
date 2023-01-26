@@ -300,4 +300,13 @@
     justify-content: center;
     padding: 7px 10px;
   }
+  
+  .filters__item {
+    width: calc((100% - 15px) / 2);
+  }
+  
+  .table-scroll .table__cell,
+  .table-scroll .table-tournament__info {
+    width: max-content;
+  }
 }

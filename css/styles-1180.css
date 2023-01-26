@@ -102,4 +102,12 @@
   .matches__list {
     border: none;
   }
+  
+  .filters {
+    flex-grow: 1;
+  }
+  
+  .filters__item {
+    width: calc((100% - 30px) / 3);
+  }
 }
