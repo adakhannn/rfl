@@ -10,6 +10,11 @@
   .info__title {
     -webkit-line-clamp: 2;
   }
+  
+  .bests__title {
+    font-size: 44px;
+    line-height: 48px;
+  }
 }
 
 @media (max-width: 1180px) {
@@ -109,5 +114,18 @@
   
   .filters__item {
     width: calc((100% - 30px) / 3);
+  }
+  
+  .bests__title {
+    font-size: 40px;
+    line-height: 44px;
+  }
+  
+  .bests__wrap {
+    gap: 25px;
+  }
+  
+  .bests__wrap {
+    padding: 40px 0;
   }
 }

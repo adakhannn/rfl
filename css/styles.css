@@ -277,7 +277,7 @@ body.fixed {
 .header__left {
   display: flex;
   align-items: center;
-  gap: 35px;
+  gap: 20px;
 }
 
 .dropdown {
@@ -394,6 +394,8 @@ body.fixed {
   display: flex;
   white-space: nowrap;
   transition: 0.3s;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .dropdown--dark .dropdown__option .dropdown__link:hover {
@@ -1722,7 +1724,7 @@ body.fixed {
 }
 
 .find__input::placeholder {
-  color:    #909;
+  color: var(--white);
 }
 
 .find__button {
@@ -1939,7 +1941,7 @@ th .table__number {
 
 .table-tournament__team {
   text-align: left;
-  width: 265px;
+  width: 220px;
 }
 
 .table-tournament__info {
@@ -2019,6 +2021,138 @@ th .table__number {
 
 .state__link--draw .state__circle {
   background-color: var(--gray-2);
+}
+
+.bests {
+  background-color: var(--blue-1);
+}
+
+.bests .container {
+  position: relative;
+}
+
+.bests__wrap {
+  display: flex;
+  align-items: center;
+  gap: 105px;
+  max-width: 955px;
+  padding: 45px 0;
+}
+
+.bests__title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 60px;
+  z-index: 2;
+  text-transform: uppercase;
+}
+
+.bests__relative {
+  position: relative;
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+.bests__decor {
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  width: auto;
+}
+
+.bests__item {
+  position: absolute;
+}
+
+.bests__item--gk {
+  bottom: 130px;
+  left: 33px;
+}
+
+.bests__link {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.bests__img {
+  border-radius: 50%;
+  border: 1px solid var(--blue-1);
+  background-color: var(--white);
+  position: relative;
+  top: 5px;
+  z-index: 1;
+}
+
+.bests__row {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  background-color: var(--blue-1);
+  gap: 5px;
+  z-index: 2;
+}
+
+.bests__number {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  text-transform: capitalize;
+}
+
+.bests__column {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.bests__name {
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bests__team {
+  text-transform: capitalize;
+  font-size: 12px;
+  line-height: 12px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bests__item--lb {
+  top: 25px;
+  left: 95px;
+}
+
+.bests__item--rb {
+  bottom: 35px;
+  left: 95px;
+}
+
+.bests__item--cb {
+  top: 25px;
+  left: calc(50% + 30px);
+}
+
+.bests__item--cd {
+  bottom: 35px;
+  left: calc(50% + 30px);
+}
+
+.bests__field--mobile {
+  display: none;
 }
 
 

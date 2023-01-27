@@ -309,4 +309,13 @@
   .table-scroll .table-tournament__info {
     width: max-content;
   }
+  
+  .bests__title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  
+  .bests__wrap {
+    gap: 20px;
+  }
 }

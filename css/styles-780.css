@@ -225,6 +225,23 @@
     font-size: 20px;
     line-height: 24px;
   }
+  
+  .bests__title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  
+  .bests__wrap {
+    flex-direction: column;
+  }
+  
+  .bests__decor {
+    display: none;
+  }
+  
+  .bests__wrap {
+    padding: 35px 0;
+  }
 }
 
 @media (max-width: 680px) {
@@ -259,5 +276,10 @@
   
   .filters__item {
     width: 100%;
+  }
+  
+  .bests__title {
+    font-size: 28px;
+    line-height: 32px;
   }
 }
